@@ -699,14 +699,14 @@ footer{
 }
 /*Footer END*/
 
-@media screen and (width < 1268px) {
+@media all and (max-width: 1268px) {
     .h-content-box, main, .footer-content{
         width: 100%;
         min-width: auto;
     }
 }
 
-@media screen and (width < 860px){
+@media all and (max-width: 860px){
     header{
         height: 60px;
     }
@@ -876,7 +876,7 @@ footer{
     }
 }
 
-@media screen and (width < 660px){
+@media screen and (max-width: 660px){
     .faculties-box {
         height: 300px;
         display: flex;
@@ -952,7 +952,7 @@ footer{
     }
 }
 
-@media screen and (width < 590px){
+@media screen and (max-width: 590px){
 
     .logo-box img{
         height: 100px;
@@ -974,6 +974,10 @@ footer{
         height: 100%;
     }
 
+    .slider-content-item p{
+        display: none;
+    }
+
     .answers-and-links{
         flex-direction: column;
     }
@@ -984,5 +988,10 @@ footer{
 
     .links-box{
         width: 100%;
+    }
+
+    .links-content{
+        box-sizing: border-box;
+        padding: 0 30px;
     }
 }

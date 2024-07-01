@@ -274,6 +274,11 @@ main{
     background-position: center;
 }
 
+.routers a{
+    color: black;
+    text-decoration: none;
+}
+
 .faculty-logo-box{
     width: 66%;
     height: 500px;
@@ -297,10 +302,11 @@ main{
     bottom: 0;
     box-sizing: border-box;
     padding: 0 40px;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(.5);
 }
 
 .faculty-name-box h1{
@@ -314,7 +320,7 @@ main{
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
-    filter: brightness(1.50) contrast(.5);
+    filter: brightness(1.60) contrast(.6);
 }
 
 .faculty-info-box{
@@ -332,6 +338,16 @@ main{
 
 .faculty-info-box p:not(:first-child){
     margin-top: 1em;
+}
+
+.faculty-info-box h3{
+    margin-top: 1em;
+}
+
+.faculty-info-box ul{
+    box-sizing: border-box;
+    padding: 0 0 0 2em;
+    font-size: 20px;
 }
 
 .management-team-box{
@@ -417,11 +433,23 @@ main{
     top: -37px;
 }
 
+.departments-item a{
+    text-decoration: none;
+}
+
 .departments-item:nth-child(odd){
     color: #357639;
 }
 
+.departments-item:nth-child(odd) a{
+    color: #357639;
+}
+
 .departments-item:nth-child(even){
+    color: #9AAD1C;
+}
+
+.departments-item:nth-child(even) a{
     color: #9AAD1C;
 }
 
