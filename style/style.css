@@ -850,6 +850,13 @@ footer{
         height: 58%;
     }
 
+    .news-info p{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 5;
+    }
+
     .news-list{
         width: 90%;
         height: 40%;
@@ -949,6 +956,27 @@ footer{
 
     .faculty-info a{
         display: none;
+    }
+
+    .news-item-info{
+        display: flex;
+        align-items: center;
+    }
+
+    .news-item-info p{
+        display: none;
+    }
+
+    footer{
+        height: 50px;
+    }
+
+    .footer-content{
+        padding: 0 5px;
+    }
+
+    .footer-links img{
+        height: 20px;
     }
 }
 
