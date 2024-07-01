@@ -18,6 +18,7 @@ body{
     background-color: #f3f3f3;
 }
 
+/*Header-START*/
 header{
     width: 100%;
     height: 102px;
@@ -189,6 +190,7 @@ header{
     width: 100%;
     height: 100%;
 }
+/*Header-END*/
 
 main{
     margin-top: 102px;
@@ -215,6 +217,7 @@ main{
     text-transform: uppercase;
 }
 
+/*Main Slider START*/
 .slider-box{
     width: 100%;
     max-width: 100%;
@@ -276,6 +279,7 @@ main{
 .slider-content-item h3{
     font-size: 26px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .navigation-dots{
@@ -338,7 +342,9 @@ main{
     width: 20px;
     height: 20px;
 }
+/*MainSlider END*/
 
+/*Splitter START*/
 .splitter{
     width: 100%;
     display: flex;
@@ -364,12 +370,16 @@ main{
     font-size: 12px;
     text-transform: uppercase;
     font-weight: normal;
+    margin: 0;
+    line-height: normal;
 }
 
 .split-bottom h2{
     font-size: 40px;
 }
+/*Splitter END*/
 
+/*Faculties START*/
 .faculties-box{
     width: 100%;
     height: 600px;
@@ -422,7 +432,7 @@ main{
     display: none;
 }
 
-.faculty-info button{
+.faculty-info a{
     background-color: #357639;
     border: none;
     border-radius: 6px;
@@ -435,10 +445,17 @@ main{
     cursor: pointer;
 }
 
+.faculty-info a:hover{
+    background-color: #9AAD1C;
+}
+
 .faculty-box:hover > .faculty-info{
     height: 50%;
 }
+/*Faculties END*/
 
+
+/*News START*/
 .news-box{
     width: 100%;
     height: 500px;
@@ -528,7 +545,9 @@ main{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+/*News END*/
 
+/*Answers and Links START*/
 .answers-and-links{
     display: flex;
 }
@@ -643,7 +662,9 @@ main{
     margin-bottom: 15px;
     font-weight: bold;
 }
+/*Answers and Links END*/
 
+/*Footer START*/
 footer{
     width: 100%;
     height: 40px;
@@ -676,6 +697,7 @@ footer{
     font-size: 12px;
     margin: auto;
 }
+/*Footer END*/
 
 @media screen and (width < 1268px) {
     .h-content-box, main, .footer-content{
@@ -881,6 +903,7 @@ footer{
         padding: 0 2px;
         justify-content: space-between;
         transition: width 0.3s ease-in-out;
+        cursor: pointer;
     }
 
     .faculty-box:hover > .faculty-info{
@@ -924,14 +947,12 @@ footer{
         border-radius: 50%;
     }
 
-    .faculty-info button{
+    .faculty-info a{
         display: none;
     }
 }
 
 @media screen and (width < 590px){
-    .logo-box{
-    }
 
     .logo-box img{
         height: 100px;
@@ -955,5 +976,13 @@ footer{
 
     .answers-and-links{
         flex-direction: column;
+    }
+
+    .answers-box{
+        width: 100%;
+    }
+
+    .links-box{
+        width: 100%;
     }
 }

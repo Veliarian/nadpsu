@@ -1,3 +1,35 @@
+const slidesUrl = "https://nadpsu.edu.ua/wp-json/wp/v2/posts?_embed&categories=50&per_page=6";
+
+// const setPosts = (posts) => {
+//     let imagesBox = document.querySelector(".slider-images-box");
+//     let contentBox = document.querySelector(".slider-content-box");
+//
+//     if (posts !== null) {
+//         posts.forEach(p => {
+//             imagesBox.innerHTML += "<div class='slider-image-item'>" +
+//                 "<img src='" + p._embedded['wp:featuredmedia'][0].source_url + "' alt='img'>" +
+//                 "</div>";
+//
+//             contentBox.innerHTML += "<div class='slider-content-item'>" +
+//                 "<h3>" + p.title.rendered + "</h3>" +
+//                 "<p>" + p.excerpt.rendered.replace("<p>", "").replace("</p>", "") + "</p>" +
+//                 "</div>";
+//         });
+//     }
+// }
+//
+// const getPosts = async () => {
+//     try {
+//         const response = await fetch(slidesUrl);
+//         const data = await response.json();
+//         setPosts(data);
+//     } catch (error) {
+//         console.error('Error:', error);
+//     }
+// }
+//
+// getPosts();
+
 let sliderImages = document.querySelectorAll(".slider-image-item");
 let sliderContents = document.querySelectorAll(".slider-content-item");
 
@@ -6,8 +38,6 @@ let contentWidth = sliderContents[0].offsetWidth;
 
 let dotsContainer = document.querySelector(".navigation-dots");
 let dot = "<div class='dot'><div></div></div>"
-
-let activeIndex = 0;
 
 const setDots = () => {
     for (let i = 0; i < sliderImages.length; i++) {
@@ -18,6 +48,8 @@ const setDots = () => {
 setDots();
 
 let dots = document.querySelectorAll(".dot");
+
+let activeIndex = 0;
 
 const setDefault = () => {
     activeIndex = 0;
@@ -88,12 +120,12 @@ document.querySelectorAll(".dot").forEach((d, i) => {
             clearInterval(timerId);
             let slideCount = i - activeIndex;
 
-            if(slideCount > 0){
-                for(let c = 0; c < slideCount; c++) {
+            if (slideCount > 0) {
+                for (let c = 0; c < slideCount; c++) {
                     slide();
                 }
-            }else {
-                for(let c = 0; c > slideCount; c--) {
+            } else {
+                for (let c = 0; c > slideCount; c--) {
                     prevSlide();
                 }
             }
