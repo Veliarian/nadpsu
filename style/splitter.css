@@ -1,0 +1,40 @@
+.splitter{
+    width: 66%;
+    min-width: 1268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    color: rgba(42, 42, 42, 1);
+    position: relative;
+}
+
+.split-top{
+    display: flex;
+    align-items: center;
+}
+
+.split-top img{
+    height: 12px;
+    margin-right: 10px;
+}
+
+.split-top h5{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    line-height: normal;
+}
+
+.split-bottom h2{
+    font-size: 40px;
+}
+
+@media all and (max-width: 1268px) {
+    .splitter{
+        width: 100%;
+        min-width: auto;
+    }
+}

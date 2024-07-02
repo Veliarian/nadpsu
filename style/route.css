@@ -1,0 +1,52 @@
+.route-box{
+    width: 66%;
+    min-width: 1268px;
+    box-sizing: border-box;
+    padding: 30px 40px;
+}
+
+.routers{
+    list-style: none;
+}
+
+.routers li{
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.routers li:not(:last-child){
+    margin-right: 40px;
+}
+
+.routers li:not(:last-child):after{
+    content: "";
+    cursor: auto;
+    position: absolute;
+    left: calc(100% + 10px);
+    width: 20px;
+    height: 100%;
+    background-image: url("../image/arrow_right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.routers a{
+    color: black;
+    text-decoration: none;
+}
+
+@media all and (max-width: 1268px){
+    .route-box{
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .route-box {
+        padding: 20px 20px;
+    }
+}

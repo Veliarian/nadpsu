@@ -18,265 +18,10 @@ body{
     background-color: #f3f3f3;
 }
 
-/*Header-START*/
-header{
-    width: 100%;
-    height: 102px;
-    background-color: rgb(53, 118, 57);
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 999;
-}
-
-.h-content-box{
-    width: 66%;
-    min-width: 1268px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    box-sizing: border-box;
-    padding: 0 20px;
-}
-
-.contact-box{
-    width: 100%;
-    height: calc(50% - 2px);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 10px;
-}
-
-.contact-info{
-    color: white;
-    font-family: "Segoe UI", serif;
-    margin-right: 20px;
-}
-
-.contact-btn{
-    width: 80px;
-    height: 30px;
-    color: white;
-    background-color: #9AAD1C;
-    border: none;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 6px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.lang-switch{
-    color: white;
-    text-decoration: none;
-    font-family: "Segoe UI", serif;
-    font-weight: bold;
-}
-
-.h-line{
-    color: #FFE300;
-    width: 100%;
-}
-
-.nav-box{
-    width: 100%;
-    height: calc(50% - 2px);
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 10px;
-}
-
-.menu-btn{
-    background: transparent;
-    border: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-.menu-btn img{
-    width: 100%;
-    height: 100%;
-}
-
-.top-nav{
-    width: 100%;
-    height: 100%;
-    margin-right: 10px;
-}
-
-.nav-links{
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    box-sizing: border-box;
-}
-
-.nav-links li{
-    position: relative;
-    cursor: pointer;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.nav-links .main-li:before{
-    content: "";
-    width: 0;
-    height: 2px;
-    background-color: #FFE300;
-    position: absolute;
-    top: 0;
-    transition: width 0.3s ease-in-out;
-}
-
-.nav-links .main-li:hover::before{
-    width: 100%;
-}
-
-.nav-links li a{
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.nav-links li .sub-links{
-    width: fit-content;
-    display: none;
-    position: absolute;
-    top: calc(100%);
-    background-color: #357639;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-}
-
-.nav-links li:hover .sub-links{
-    display: block;
-}
-
-.nav-links li .sub-links li{
-    display: block;
-    border-bottom: 1px solid white;
-    white-space: nowrap;
-    box-sizing: border-box;
-    padding: 5px 20px;
-}
-
-.nav-links li .sub-links li:hover{
-    background-color: #9AAD1C;
-}
-
-.search-btn{
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.search-btn img{
-    width: 100%;
-    height: 100%;
-}
-/*Header-END*/
-
 main{
+    width: 100%;
     margin-top: 102px;
-    width: 100%;
     background-color: rgb(235, 235, 235);
-}
-
-.block-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-/*Splitter START*/
-.splitter{
-    width: 66%;
-    min-width: 1268px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 50px 30px;
-    color: rgba(42, 42, 42, 1);
-    position: relative;
-}
-
-.split-top{
-    display: flex;
-    align-items: center;
-}
-
-.split-top img{
-    height: 12px;
-    margin-right: 10px;
-}
-
-.split-top h5{
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: normal;
-    margin: 0;
-    line-height: normal;
-}
-
-.split-bottom h2{
-    font-size: 40px;
-}
-/*Splitter END*/
-
-.route-box{
-    width: 66%;
-    min-width: 1268px;
-    box-sizing: border-box;
-    padding: 30px 40px;
-}
-
-.routers{
-    list-style: none;
-}
-
-.routers li{
-    display: inline;
-    position: relative;
-    cursor: pointer;
-}
-
-.routers li:not(:first-child){
-    margin-left: 40px;
-}
-
-.routers li:not(:last-child):after{
-    content: "";
-    cursor: auto;
-    position: absolute;
-    left: calc(100% + 10px);
-    width: 20px;
-    height: 100%;
-    background-image: url("../image/arrow_right.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.routers a{
-    color: black;
-    text-decoration: none;
 }
 
 .faculty-logo-box{
@@ -494,178 +239,164 @@ main{
     height: 100%;
 }
 
-/*Footer START*/
-footer{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    background-color: #4a4f55;
-}
-
-.footer-content{
-    width: 66%;
-    min-width: 1268px;
-    box-sizing: border-box;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-}
-
-.footer-links{
-    display: flex;
-    align-items: center;
-}
-
-.footer-links img{
-    height: 30px;
-    margin-right: 10px;
-}
-
-.author{
-    color: #D9D9D9;
-    font-size: 12px;
-    margin: auto;
-}
-/*Footer END*/
-
-@media screen and (width < 1268px) {
-    .h-content-box, main, .footer-content{
+@media all and (max-width: 1268px) {
+    .faculty-logo-box {
         width: 100%;
         min-width: auto;
     }
+
+    .faculty-logo-box img{
+        height: 100%;
+    }
+
+    .faculty-name-box h1{
+        font-size: 50px;
+    }
+
+    .faculty-info-box{
+        width: 100%;
+        min-width: auto;
+    }
+
+    .management-team-box{
+        width: 100%;
+        min-width: auto;
+        height: fit-content;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px 0;
+    }
+
+    .departments-box{
+        width: 100%;
+        min-width: auto;
+    }
+
+    .faculty-gallery{
+        width: 100%;
+        min-width: auto;
+        gap: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .faculty-gallery-item{
+        width: 33%;
+        height: 250px;
+    }
 }
 
-@media screen and (width < 860px){
-    header{
-        height: 60px;
+@media all and (max-width: 860px){
+    main{
+        margin-top: 60px;
     }
 
-    .h-content-box{
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        padding: 0 10px;
-        align-items: center;
+    .faculty-name-box{
+        padding: 0 20px;
     }
 
-    .contact-box{
-        width: fit-content;
-        height: 100%;
+    .faculty-logo-box{
+        height: 400px;
     }
 
-    .contact-info{
-        display: none;
+    .faculty-name-box h1{
+        font-size: 40px;
     }
 
-    .h-line{
-        display: none;
+    .manager-box{
+        width: 300px;
     }
 
-    .nav-box{
-        width: fit-content;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        position: relative;
-        padding: 0;
+    .manager-image{
+        height: 60%;
     }
 
-    .menu-btn{
-        display: block;
+    .department-name{
+        font-size: 30px;
     }
 
-    .top-nav{
-        width: fit-content;
+    .department-marker:after{
+        height: 22px;
+        top: -30px;
+    }
+
+    .faculty-gallery-item{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .faculty-logo-box{
+        height: 300px;
+    }
+
+    .faculty-name-box h1{
+        font-size: 30px;
+    }
+
+    .manager-box{
+        width: 280px;
+    }
+
+    .manager-image{
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .faculty-name-box{
+        padding: 10px;
         height: fit-content;
-        position: absolute;
-        top: 100%;
-        left: -200px;
-        transition: left 0.2s ease-in-out;
-    }
-
-    .top-nav.active{
-        left: -10px;
-    }
-
-    .nav-links{
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #357639;
-        border: 1px solid white;
-        border-bottom: none;
-    }
-
-    .nav-links .main-li{
         width: 100%;
-        height: 35px;
-        border-bottom: 1px solid white;
-        white-space: nowrap;
-        box-sizing: border-box;
-        padding: 0 20px;
+        bottom: 0;
+        top: auto;
     }
 
-    .nav-links li a{
-        font-size: 18px;
+    .faculty-name-box h1{
+        width: auto;
+        text-align: center;
     }
 
-    .nav-links .main-li:before{
-        display: none;
+    .manager-box{
+        width: 220px;
     }
 
-    .nav-links .main-li:hover{
-        background-color: #9AAD1C;
+    .manager-image{
+        height: 50%;
     }
 
-    .nav-links li .sub-links{
-        width: fit-content;
-        display: none;
-        position: absolute;
-        top: -1px;
-        left: 100%;
-        background-color: #357639;
-        border-top: 1px solid white;
-        border-left: 1px solid white;
-        border-right: 1px solid white;
+    .departments-box{
+        padding: 0 10px;
     }
 
-    .nav-links li:hover .sub-links{
-        display: block;
-    }
-
-    .nav-links li .sub-links li{
-        height: 35px;
+    .departments-list{
         display: flex;
-        align-items: center;
-        border-bottom: 1px solid white;
-        white-space: nowrap;
-        box-sizing: border-box;
-        padding: 0 20px;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    .nav-links li .sub-links a{
-        font-size: 18px;
+    .department-name{
+        font-size: 20px;
     }
 
-    .nav-links li .sub-links li:hover{
-        background-color: #9AAD1C;
-    }
-
-    .search-btn{
-        position: absolute;
-        left: 60px;
+    .department-marker{
         width: 30px;
         height: 30px;
     }
 
-    main{
-        margin-top: 60px;
+    .department-marker:before{
+        width: 12px;
+        height: 12px;
+        border: 6px solid;
     }
-}
 
-@media screen and (width < 660px){
+    .department-marker:after{
+        height: 17px;
+        top: -25px;
+    }
 
-}
-
-@media screen and (width < 590px){
-
+    .faculty-gallery-item{
+        width: 48%;
+        min-width: 48%;
+    }
 }
